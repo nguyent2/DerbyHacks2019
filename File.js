@@ -12,7 +12,7 @@ window.addEventListener('load', function() {
   });
 });
 
-function imageIsLoaded(e) { alert(e); }
+//function imageIsLoaded(e) { alert(e); }
 
 
 
@@ -38,7 +38,6 @@ function setup() {
     // ml5 to create video capture
     video = createCapture(VIDEO);
     video.hide();
-    background(0);
     // load the MobileNet and apply it on video feed
     mobilenet = ml5.imageClassifier('MobileNet', video, modelReady);
 }
@@ -46,12 +45,10 @@ function setup() {
 function draw() {
     background(0);
     // show video 
-    image(video, 0, 0);
-    fill(255);
-    textSize(32);
+    image(video, 20, 20);
+    //fill(255);
+    //textSize(32);
     // show prediction label 
-    text(label, 10, height - 20);
+    //text(label, 10, height - 20);
 }
-
-
 
