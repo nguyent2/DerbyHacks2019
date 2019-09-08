@@ -1,0 +1,17 @@
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+title {
+color:red;
+}
+#video {
+position: relative;
+right: 0px;
+background(0);
+}
